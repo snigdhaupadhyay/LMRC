@@ -12,11 +12,13 @@ import android.view.ViewGroup;
 import android.os.Build;
 
 public class MainActivity extends Activity {
+	//hghhgjgkgkjhjh
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.fragment_main);
+		
 
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
