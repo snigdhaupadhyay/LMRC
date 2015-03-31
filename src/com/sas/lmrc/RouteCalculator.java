@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class RouteCalculator extends Activity {
 	EditText e1 , e2;
@@ -21,12 +22,17 @@ public class RouteCalculator extends Activity {
 		e1= (EditText) findViewById(R.id.from);
 		e2=(EditText) findViewById(R.id.to);
 		b1= (Button) findViewById(R.id.findroute);
+		
+		e1.getText().toString();
+		e2.getText().toString();
+		
 		 
 		b1.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				Toast.makeText(RouteCalculator.this, "ROUTE", Toast.LENGTH_LONG).show();
 				
 			}
 		});
