@@ -32,7 +32,7 @@ public class RouteCalculator extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Toast.makeText(RouteCalculator.this, "ROUTE", Toast.LENGTH_LONG).show();
+				Toast.makeText(RouteCalculator.this, "DISTANCE IS 5 km", Toast.LENGTH_LONG).show();
 				
 			}
 		});

@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.sas.lmrc.MainActivity$PlaceholderFragment">
+    tools:context="com.sas.lmrc.MainActivity$PlaceholderFragment" >
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -31,24 +31,23 @@
                 android:id="@+id/route"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center_horizontal|center_vertical"                
-                android:text="Route Calculator"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
                 android:onClick="onClick"
-				android:clickable="true"
+                android:text="Route Calculator"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
-
         </LinearLayout>
-
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignLeft="@+id/linearLayout1"
         android:layout_alignParentBottom="true" >
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/title" />
@@ -58,37 +57,10 @@
             android:layout_width="wrap_content"
             android:layout_height="58dp"
             android:layout_weight="0.82"
-            android:text="Large Text"
+            android:text="lost and found"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/station"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout1"
-        android:layout_below="@+id/linearLayout1"
-        android:layout_marginTop="38dp"
-        android:src="@drawable/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/station"
-        android:layout_below="@+id/station"
-        android:layout_marginTop="24dp"
-        android:src="@drawable/title" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView4"
-        android:layout_alignLeft="@+id/stationinfo"
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/stationinfo"
@@ -98,6 +70,50 @@
         android:layout_alignRight="@+id/linearLayout1"
         android:layout_marginRight="36dp"
         android:text="Station Info"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:src="@drawable/title" />
+
+    <ImageView
+        android:id="@+id/station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/title" />
+
+    <TextView
+        android:id="@+id/fare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:text="Nearest Metro Station"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/station"
+        android:layout_alignTop="@+id/textView1"
+        android:src="@drawable/title" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stationinfo"
+        android:layout_below="@+id/stationinfo"
+        android:layout_marginTop="56dp"
+        android:text="tour guide"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
