@@ -8,6 +8,9 @@
 package com.sas.lmrc;
 
 public final class R {
+    public static final class array {
+        public static final int StationArray=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class dimen {
@@ -22,42 +25,57 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int front=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int title=0x7f020002;
+        public static final int blue=0x7f020000;
+        public static final int direction=0x7f020001;
+        public static final int front=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int lost=0x7f020004;
+        public static final int neareststn=0x7f020005;
+        public static final int red=0x7f020006;
+        public static final int routee=0x7f020007;
+        public static final int stationinfo=0x7f020008;
+        public static final int title=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f080010;
-        public static final int container=0x7f080000;
-        public static final int fare=0x7f08000a;
-        public static final int findroute=0x7f08000f;
-        public static final int from=0x7f08000d;
-        public static final int imageView1=0x7f080005;
-        public static final int imageView2=0x7f080009;
-        public static final int imageView3=0x7f08000b;
-        public static final int linearLayout1=0x7f080001;
-        public static final int linearLayout2=0x7f080004;
-        public static final int route=0x7f080003;
-        public static final int route1=0x7f080002;
-        public static final int station=0x7f080008;
-        public static final int stationinfo=0x7f080007;
-        public static final int textView1=0x7f08000c;
-        public static final int textView2=0x7f080006;
-        public static final int to=0x7f08000e;
+        public static final int action_settings=0x7f090016;
+        public static final int container=0x7f090004;
+        public static final int editText1=0x7f090015;
+        public static final int fare=0x7f09000e;
+        public static final int findroute=0x7f090002;
+        public static final int from=0x7f090000;
+        public static final int imageView1=0x7f09000c;
+        public static final int imageView2=0x7f09000f;
+        public static final int imageView3=0x7f09000d;
+        public static final int iv_route_line=0x7f090011;
+        public static final int linearLayout1=0x7f090005;
+        public static final int linearLayout2=0x7f090008;
+        public static final int listView1=0x7f090003;
+        public static final int route=0x7f090007;
+        public static final int routee=0x7f090006;
+        public static final int stationinf=0x7f09000b;
+        public static final int stationinfo=0x7f090010;
+        public static final int tableRow1=0x7f090013;
+        public static final int tableRow2=0x7f090014;
+        public static final int textView1=0x7f09000a;
+        public static final int textView2=0x7f090009;
+        public static final int to=0x7f090001;
+        public static final int tv_route_stn=0x7f090012;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int fragment_main=0x7f030001;
-        public static final int route=0x7f030002;
-        public static final int splash_activity=0x7f030003;
+        public static final int actiity_route=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int fragment_main=0x7f030002;
+        public static final int route_rowactivity=0x7f030003;
+        public static final int routeinfo=0x7f030004;
+        public static final int splash_activity=0x7f030005;
+        public static final int station_info=0x7f030006;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050002;
+        public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
     }
     public static final class style {
         /** 
@@ -81,10 +99,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }

@@ -10,19 +10,29 @@
         android:layout_height="wrap_content"
         android:ems="10" >
 
-        <requestFocus />
     </EditText>
 
     <EditText
         android:id="@+id/to"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10" />
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
 
     <Button
         android:id="@+id/findroute"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="route" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    </ListView>
 
 </LinearLayout>

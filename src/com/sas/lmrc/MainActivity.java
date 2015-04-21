@@ -25,11 +25,22 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.fragment_main);
-		 route= (ImageView) findViewById(R.id.route1);
-		 stationinfo=  (ImageView) findViewById(R.id.station);
+		 route= (ImageView) findViewById(R.id.routee);
+		 stationinfo=  (ImageView) findViewById(R.id.stationinf);
 		  
 		 r1= (TextView) findViewById(R.id.route);
 		 s1= (TextView) findViewById(R.id.stationinfo);
+		
+		 s1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent= new Intent(MainActivity.this, StationInfo.class);
+				startActivity(intent);
+				
+			}
+		});
 		 
 		 r1.setOnClickListener(new OnClickListener() {
 			
@@ -42,9 +53,6 @@ public class MainActivity extends Activity {
 					
 			}
 		});
-		
-		
-
 		
 		}
 	}
