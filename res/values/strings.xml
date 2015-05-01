@@ -2,7 +2,14 @@
 <resources>
 
     <string name="app_name">LMRC</string>
-    <string name="hello_world">Hello world!</string>
+   
     <string name="action_settings">Settings</string>
+    <string-array name = "StationArray">
+        <item >"amausi"</item>
+        <item >"chaar bagh"</item>
+        <item >"css airport"</item>
+        
+        <item >"krishna nagar"</item>
+        </string-array>
 
 </resources>

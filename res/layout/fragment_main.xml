@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.sas.lmrc.MainActivity$PlaceholderFragment">
+    tools:context="com.sas.lmrc.MainActivity$PlaceholderFragment" >
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -17,40 +17,24 @@
         android:layout_alignParentTop="true"
         android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
             <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher" />
+                android:id="@+id/routee"
+                android:layout_width="60dp"
+                android:layout_height="58dp"
+                android:src="@drawable/routee" />
 
             <TextView
-                android:id="@+id/textView1"
-                android:layout_width="match_parent"
+                android:id="@+id/route"
+                android:layout_width="176dp"
                 android:layout_height="match_parent"
-                android:gravity="center_horizontal|center_vertical"                
-                android:text="Large Text"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="onClick"
+                android:text="ROUTE"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
         </LinearLayout>
@@ -58,41 +42,83 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignLeft="@+id/linearLayout1"
         android:layout_alignParentBottom="true" >
 
-        <Button
-            android:id="@+id/button5"
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="101dp"
+            android:layout_height="77dp"
+            android:text="LOST &amp; FOUND"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_launcher" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.99"
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        </LinearLayout>
+            android:text="TOUR GUIDE"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/stationinf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/stationinfo" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_weight="0.22"
+        android:src="@drawable/lost" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/fare"
+        android:layout_marginLeft="22dp"
+        android:src="@drawable/direction" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_centerVertical="true"
+        android:layout_weight="0.22"
+        android:src="@drawable/neareststn" />
+
+    <TextView
+        android:id="@+id/stationinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="STATION INFO"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/fare"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="NEAREST METRO STATION"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
